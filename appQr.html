@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap">
+    <style>
+        /* Estilos para o cabeçalho */
+        #headerImage {
+            width: 100%;
+            height: 300px;
+            background-size: cover;
+            background-position: center center;
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .title {
+            position: absolute;
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-size: 40px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Estilos para os botões */
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .button {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            text-align: center;
+            background-color: #59869b;
+            border: none;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .button img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .button-text {
+            font-family: Plus Jakarta Sans;
+            font-size: 14px;
+        }
+        
+        h1 {
+            font-family: "Plus Jakarta Sans", sans-serif;
+            text-align: center; /* Centraliza horizontalmente */
+            line-height: 1; /* Centraliza verticalmente */
+        }
+
+    </style>
+</head>
+<body>
+    <header id="headerImage" style="background-image: url('logo.jpeg');">
+        <div class="title"></div>
+        
+    </header>
+    <h1>acesse</h1>
+    <hr>
+    <div class="button-container">
+        <a href="app.html" class="button">
+            <img src="site logo.png" alt="Ícone 1">
+            <div class="button-text"> Acessar site</div>
+        </a>
+        <a href="instruçoes.html" class="button">
+            <img src="manual logo.png" alt="Ícone 2">
+            <div class="button-text">Acessar intruções de plantio</div>
+        </a>
+         <a href="tabela nutricional.html" class="button">
+            <img src="tabela logo .png" alt="Ícone 2">
+            <div class="button-text">Acessar Informção nutricional</div>
+        </a>
+        <a href=".apk" class="button">
+            <img src="download logo .png" alt="Ícone 2">
+            <div class="button-text">Baixar App</div>
+        </a>
+    </div>
+   
+        </a>
+    </div>
+   
+    
+    <script>
+        // Obtém a data e hora atual
+        const now = new Date();
+        const hour = now.getHours();
+        let greeting;
+
+        if (hour >= 5 && hour < 12) {
+            greeting = "Bom dia!";
+        } else if (hour >= 12 && hour < 18) {
+            greeting = "Boa tarde!";
+        } else {
+            greeting = "Boa noite!";
+        }
+
+        document.querySelector(".title").innerText = greeting;
+    </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto de Saladas de Frutas Veganas e Sustentáveis</title>
+  <!-- Adicione links para seus estilos CSS e bibliotecas como FontAwesome aqui -->
+  <link rel="stylesheet" href="caminho-para-seu-estilo.css">
+  <link rel="stylesheet" href="caminho-para-fontawesome/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+
+    header {
+      background-color: #4caf50;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    section {
+      max-width: 100%;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    #slogan {
+      flex: 1;
+      padding: 0 20px;
+    }
+
+    #slogan p {
+      margin-bottom: 15px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      border-radius: 50%;
+      margin-top: 20px;
+    }
+
+    #cadastro {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    label {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input {
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #4caf50;
+      color: #fff;
+      border-radius: 0 0 8px 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Saladas de Frutas Sustentáveis</h1>
+  </header>
+
+  <section>
+    <div id="slogan">
+      <p>Nossas saladas de frutas são uma escolha deliciosa e sustentável! Ao escolher nossos produtos, você não apenas desfruta de sabores incríveis, mas também contribui para um estilo de vida consciente.</p>
+      <p>Cada salada de frutas é feita com ingredientes vegetais frescos e saudáveis, sem nenhum produto de origem animal. Enviamos um pacote de sementes junto para que você possa plantar e fazer parte do ciclo sustentável.</p>
+      <p>E tem mais! A cada 10 saladas compradas, você ganha uma grátis. Faça parte do nosso programa de recompensas e viva de maneira saudável e consciente!</p>
+      <p>Detalhe: nossos produtos são 100% veganos.</p>
+    </div>
+    <img src="logo.jpeg" alt="Imagem Ilustrativa">
+  </section>
+
+  <section id="cadastro">
+    <h2>Participe do Programa de Recompensas</h2>
+    <form action="https://api.sheetmonkey.io/form/etiKsoSsZbKG5xAHrqnDMS" method="post">
+      <label>Seu Nome: <input type="text" name="Name" required /></label>
+      <label> Seu Email: <input type="email" name="Email" required /></label>
+      <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+      <input type="submit" value="Cadatrar" />
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Saladas de Frutas Sustentáveis. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
